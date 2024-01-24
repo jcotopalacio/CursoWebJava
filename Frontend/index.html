@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo html</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#parrafos">Párrafos</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article id="html">
+            <h2>HTML</h2>
+            <section id="parrafos">
+                <h3>Párrafos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate animi facilis ea deleniti quia
+                    non, optio, rem quisquam magni magnam fugiat maxime consectetur. Voluptatum totam quas asperiores
+                    ex, animi magnam?</p>
+                <p>Voluptatum aspernatur accusantium ipsam, dignissimos consequatur, obcaecati corporis officiis,
+                    distinctio esse assumenda illo a quia. Vero eum, illum aspernatur vel natus dolor hic itaque sequi
+                    corrupti consequatur reiciendis. Sit, alias.</p>
+                <p>Sequi dolor facilis tenetur assumenda ea! Facilis ipsam, labore numquam debitis culpa delectus.
+                    Voluptates aliquid commodi soluta praesentium inventore alias, vitae eum dolores cumque? Recusandae
+                    commodi sint ad repellat et!</p>
+                <pre>
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola a todos");
+    }
+}
+                </pre>
+            </section>
+            <!-- section#listas>h3{Listas}>ul>li {Elemento $} -->
+            <section id="listas">
+                <h3>Listas</h3>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2
+                        <!-- ol>li*3{Elemento 2.$} -->
+                        <ol>
+                            <li>Elemento 2.1</li>
+                            <li>Elemento 2.2</li>
+                            <li>Elemento 2.3</li>
+                        </ol>
+                    </li>
+                    <li>Elemento 3</li>
+                </ol>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Hyper Text Markup Language</dd>
+
+                    <dt>CSS</dt>
+                    <dd>Cascade Style Sheets</dd>
+                </dl>
+
+            </section>
+
+            <section id="tablas">
+                <h3>Tablas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- tr*10>(th>{$})+(td>{Nombre$})+(td>{Apellidos $}) -->
+                        <tr>
+                            <th>1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Jane</td>
+                            <td>Smith</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Michael</td>
+                            <td>Johnson</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>Sarah</td>
+                            <td>Williams</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td>David</td>
+                            <td>Brown</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td>Emily</td>
+                            <td>Jones</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td>Christopher</td>
+                            <td>Miller</td>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td>Amanda</td>
+                            <td>Anderson</td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td>Matthew</td>
+                            <td>Thompson</td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td>Olivia</td>
+                            <td>Clark</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="multimedia">
+                <h3>Multimedia</h3>
+                <figure>
+                    <img src="https://picsum.photos/id/237/200/300" alt="Imagen aleatoria">
+                    <figcaption>Imagen aleatoria</figcaption>
+                </figure>
+                <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls></audio>
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <div class="aspecto a1x1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12311.708993224274!2d-0.40304639999999997!3d39.516131650000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6045a77ab50dbf%3A0xe519461d59cb2e29!2sBurjassot%20-%20Godella!5e0!3m2!1sen!2ses!4v1705948850117!5m2!1sen!2ses"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="aspecto a4x3">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/6nNlTIiFd3J06W0rJiiwlz?utm_source=generator"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="aspecto a16x9">
+                    <iframe e src="https://www.youtube.com/embed/ZTwCtQIEswM?si=aVyRaAg_tAumoGkA"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+
+
+            <section id="formularios">
+                <h3>Formularios</h3>
+                <form>
+                    <fieldset>
+                        <legend>Formulario de Alta básico</legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+                        </div>
+                        <div>
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
+
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Introduce tu email">
+                        </div>
+                        <button>Alta</button>
+                    </fieldset>
+                </form>
+
+                <form action="https://www.google.com/search">
+                    <fieldset>
+                        <legend>Formulario de búsqueda</legend>
+                        <div>
+                            <label for="busqueda">Buscar</label>
+                            <input type="search" id="busqueda" name="q">
+                        </div>
+                        <button>Buscar</button>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <legend>Formulario con todos los tipos de input</legend>
+                        <div>
+                            <label for="text">Text</label>
+                            <input type="text" name="text" id="text" placeholder="Enter text">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter password">
+                        </div>
+                        <div>
+                            <label for="number">Number</label>
+                            <input type="number" name="number" id="number" placeholder="Enter number">
+                        </div>
+                        <div>
+                            <label for="date">Date</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div>
+                            <label for="month">Mes</label>
+                            <input type="month" name="month" id="month">
+                        </div>
+                        <div>
+                            <label for="time">Time</label>
+                            <input type="time" name="time" id="time">
+                        </div>
+                        <div>
+                            <label for="checkbox">Checkbox</label>
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                        </div>
+                        <div>
+                            <label for="radio">Radio</label>
+                            <input type="radio" name="radio" id="radio">
+                        </div>
+                        <div>
+                            <label>File</label>
+                            <input type="file" name="file" id="file">
+                        </div>
+                        <div>
+                            <label>Submit</label>
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div>
+                            <label>Reset</label>
+                            <input type="reset" value="Reset">
+                        </div>
+                        <div>
+                            <label>Button</label>
+                            <input type="button" value="Button">
+                        </div>
+                        <div>
+                            <label for="color">Color</label>
+                            <input type="color" name="color" id="color">
+                        </div>
+                        <div>
+                            <label for="url">URL</label>
+                            <input type="url" name="url" id="url" placeholder="Enter URL">
+                        </div>
+                        <div>
+                            <label for="tel">Tel：</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Enter tel">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Anuncio 1</a></li>
+                <li><a href="#">Anuncio 2</a></li>
+                <li><a href="#">Anuncio 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <footer>
+        <p>&copy; Derechos Reservados</p>
+    </footer>
+</body>
+
+</html>
