@@ -20,5 +20,17 @@
       "nombre": "Popo",
       "precio": "14"
     }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Mercadona",
+      "ubicacion": "Madrid"
+    },
+    {
+      "nombre": "Lidl",
+      "ubicacion": "Huelva",
+      "id": "4581"
+    }
   ]
 }
